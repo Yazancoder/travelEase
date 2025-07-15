@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelEase | Discover Your Perfect Getaway</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">
+          <i class="fas fa-sun"></i>
+          TravelEase
+        </a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="cart-icon" id="cartIcon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Your Perfect Getaway</h1>
+        <p>
+          Experience the world with our handpicked travel packages. From
+          tropical beaches to mountain adventures, we have the perfect escape
+          for you.
+        </p>
+        <div class="hero-buttons">
+          <a href="#destinations" class="btn">Explore Packages</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="section" id="destinations">
+      <div class="section-header">
+        <h2>Popular Travel Packages</h2>
+        <p>
+          Discover our most sought-after destinations. All packages include
+          flights, accommodation, and guided tours.
+        </p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="beach">Beach</button>
+        <button class="filter-btn" data-filter="mountain">Mountain</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Beach Packages -->
+        <div class="package-card" data-category="beach">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Bali Paradise"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Bali Paradise</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Bali, Indonesia</span>
+            </div>
+            <p>
+              Experience the ultimate tropical getaway with pristine beaches and
+              vibrant culture.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>7 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.8</span>
+              </div>
+            </div>
+            <div class="package-price">$1,299 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="1"
+              data-name="Bali Paradise"
+              data-price="1299"
+              data-image="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="beach">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+              alt="Maldives Luxury"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Maldives Luxury</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Maldives</span>
+            </div>
+            <p>
+              Overwater bungalows, crystal clear waters, and unparalleled
+              luxury.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>6 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>5.0</span>
+              </div>
+            </div>
+            <div class="package-price">$3,499 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="2"
+              data-name="Maldives Luxury"
+              data-price="3499"
+              data-image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="beach">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=800&q=80"
+              alt="Santorini Escape"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Santorini Escape</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Santorini, Greece</span>
+            </div>
+            <p>
+              White-washed villages, blue domes, and breathtaking sunsets by the
+              sea.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>5 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.9</span>
+              </div>
+            </div>
+            <div class="package-price">$2,199 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="3"
+              data-name="Santorini Escape"
+              data-price="2199"
+              data-image="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="beach">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80"
+              alt="Hawaii Dream"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Hawaii Dream</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Hawaii, USA</span>
+            </div>
+            <p>Surf, sun, and volcanoes on the world’s most famous islands.</p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>8 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.7</span>
+              </div>
+            </div>
+            <div class="package-price">$2,799 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="4"
+              data-name="Hawaii Dream"
+              data-price="2799"
+              data-image="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="beach">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              alt="Phuket Retreat"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Phuket Retreat</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Phuket, Thailand</span>
+            </div>
+            <p>
+              Exotic beaches, vibrant nightlife, and delicious Thai cuisine.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>6 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.6</span>
+              </div>
+            </div>
+            <div class="package-price">$1,899 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="5"
+              data-name="Phuket Retreat"
+              data-price="1899"
+              data-image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Mountain Packages -->
+        <div class="package-card" data-category="mountain">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Swiss Alps Adventure"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Swiss Alps Adventure</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Switzerland</span>
+            </div>
+            <p>
+              Breathtaking mountain views, hiking trails, and charming alpine
+              villages.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>10 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.9</span>
+              </div>
+            </div>
+            <div class="package-price">$2,499 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="6"
+              data-name="Swiss Alps Adventure"
+              data-price="2499"
+              data-image="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="mountain">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+              alt="Rocky Mountains Trek"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Rocky Mountains Trek</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Canada</span>
+            </div>
+            <p>
+              Explore the wild beauty of the Rockies with guided hikes and
+              camping.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>8 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.8</span>
+              </div>
+            </div>
+            <div class="package-price">$2,199 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="7"
+              data-name="Rocky Mountains Trek"
+              data-price="2199"
+              data-image="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="mountain">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+              alt="Himalayan Expedition"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Himalayan Expedition</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Nepal</span>
+            </div>
+            <p>
+              Conquer the world’s highest peaks with expert guides and
+              breathtaking views.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>12 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>5.0</span>
+              </div>
+            </div>
+            <div class="package-price">$3,299 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="8"
+              data-name="Himalayan Expedition"
+              data-price="3299"
+              data-image="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="mountain">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+              alt="Andes Adventure"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Andes Adventure</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Peru</span>
+            </div>
+            <p>
+              Discover Machu Picchu and the Andes with local guides and unique
+              experiences.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>9 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.7</span>
+              </div>
+            </div>
+            <div class="package-price">$2,599 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="9"
+              data-name="Andes Adventure"
+              data-price="2599"
+              data-image="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="mountain">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+              alt="Dolomites Discovery"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Dolomites Discovery</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Italy</span>
+            </div>
+            <p>
+              Explore the dramatic peaks and charming villages of the Italian
+              Dolomites.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>7 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.8</span>
+              </div>
+            </div>
+            <div class="package-price">$2,399 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="10"
+              data-name="Dolomites Discovery"
+              data-price="2399"
+              data-image="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- City Packages -->
+        <div class="package-card" data-category="city">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+              alt="Romantic Paris"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Romantic Paris</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Paris, France</span>
+            </div>
+            <p>
+              Experience the city of love with iconic landmarks, gourmet dining,
+              and art.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>5 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.7</span>
+              </div>
+            </div>
+            <div class="package-price">$1,799 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="11"
+              data-name="Romantic Paris"
+              data-price="1799"
+              data-image="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="city">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+              alt="New York City Explorer"
+            />
+          </div>
+          <div class="package-info">
+            <h3>New York City Explorer</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>New York, USA</span>
+            </div>
+            <p>
+              Discover the city that never sleeps with iconic landmarks and
+              Broadway shows.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>6 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.6</span>
+              </div>
+            </div>
+            <div class="package-price">$1,999 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="12"
+              data-name="New York City Explorer"
+              data-price="1999"
+              data-image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="city">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80"
+              alt="Tokyo Lights"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Tokyo Lights</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Tokyo, Japan</span>
+            </div>
+            <p>
+              Experience the vibrant city life, technology, and culture of
+              Tokyo.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>7 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.8</span>
+              </div>
+            </div>
+            <div class="package-price">$2,299 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="13"
+              data-name="Tokyo Lights"
+              data-price="2299"
+              data-image="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="city">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+              alt="London Heritage"
+            />
+          </div>
+          <div class="package-info">
+            <h3>London Heritage</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>London, UK</span>
+            </div>
+            <p>
+              Historic sites, royal palaces, and world-class museums in the
+              heart of London.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>6 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.7</span>
+              </div>
+            </div>
+            <div class="package-price">$2,099 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="14"
+              data-name="London Heritage"
+              data-price="2099"
+              data-image="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="city">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80"
+              alt="Dubai Marvels"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Dubai Marvels</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Dubai, UAE</span>
+            </div>
+            <p>
+              Luxury shopping, ultramodern architecture, and lively nightlife
+              scene.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>5 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.8</span>
+              </div>
+            </div>
+            <div class="package-price">$2,499 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="15"
+              data-name="Dubai Marvels"
+              data-price="2499"
+              data-image="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Adventure Packages -->
+        <div class="package-card" data-category="adventure">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+              alt="Safari Adventure"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Safari Adventure</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Kenya, Africa</span>
+            </div>
+            <p>
+              Witness incredible wildlife in their natural habitat with expert
+              guides.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>8 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.9</span>
+              </div>
+            </div>
+            <div class="package-price">$2,899 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="16"
+              data-name="Safari Adventure"
+              data-price="2899"
+              data-image="https://images.unsplash.com/photo-1590523278191-995cbcda646b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="adventure">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+              alt="Amazon Rainforest"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Amazon Rainforest</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Brazil</span>
+            </div>
+            <p>
+              Explore the world’s largest rainforest with expert naturalists and
+              river cruises.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>9 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.7</span>
+              </div>
+            </div>
+            <div class="package-price">$2,599 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="17"
+              data-name="Amazon Rainforest"
+              data-price="2599"
+              data-image="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="adventure">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+              alt="Patagonia Expedition"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Patagonia Expedition</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Argentina & Chile</span>
+            </div>
+            <p>
+              Hike glaciers, mountains, and lakes in the wilds of Patagonia.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>10 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.8</span>
+              </div>
+            </div>
+            <div class="package-price">$3,199 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="18"
+              data-name="Patagonia Expedition"
+              data-price="3199"
+              data-image="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="adventure">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+              alt="Outback Safari"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Outback Safari</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Australia</span>
+            </div>
+            <p>
+              Discover the rugged beauty and wildlife of the Australian Outback.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>7 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.6</span>
+              </div>
+            </div>
+            <div class="package-price">$2,499 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="19"
+              data-name="Outback Safari"
+              data-price="2499"
+              data-image="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="package-card" data-category="adventure">
+          <div class="package-image">
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+              alt="Alaskan Wilderness"
+            />
+          </div>
+          <div class="package-info">
+            <h3>Alaskan Wilderness</h3>
+            <div class="package-location">
+              <i class="fas fa-map-marker-alt"></i> <span>Alaska, USA</span>
+            </div>
+            <p>
+              Kayak, hike, and spot wildlife in the pristine landscapes of
+              Alaska.
+            </p>
+            <div class="package-details">
+              <div class="detail">
+                <i class="fas fa-calendar"></i> <span>8 Days</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-user"></i> <span>2 Persons</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-star"></i> <span>4.9</span>
+              </div>
+            </div>
+            <div class="package-price">$2,899 <span>per person</span></div>
+            <button
+              class="add-to-cart"
+              data-id="20"
+              data-name="Alaskan Wilderness"
+              data-price="2899"
+              data-image="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about" style="background-color: #f0f5ff">
+      <div class="section-header">
+        <h2>Why Choose TravelEase</h2>
+        <p>We make travel planning effortless and unforgettable</p>
+      </div>
+
+      <div class="packages-grid">
+        <div class="package-card" style="text-align: center">
+          <div style="font-size: 3rem; color: var(--primary); margin: 20px 0">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>Global Destinations</h3>
+          <p>
+            Access to over 200 destinations worldwide with carefully curated
+            experiences.
+          </p>
+        </div>
+
+        <div class="package-card" style="text-align: center">
+          <div style="font-size: 3rem; color: var(--primary); margin: 20px 0">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h3>Best Price Guarantee</h3>
+          <p>
+            We promise the best rates for all our packages with no hidden fees.
+          </p>
+        </div>
+
+        <div class="package-card" style="text-align: center">
+          <div style="font-size: 3rem; color: var(--primary); margin: 20px 0">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>
+            Our travel experts are available around the clock to assist you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions? Our team is here to help you plan your perfect
+          vacation.
+        </p>
+      </div>
+
+      <div class="packages-grid">
+        <div class="package-card">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-envelope"></i> info@travelease.com</p>
+          <p><i class="fas fa-phone"></i> +967 777 888 999</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Travel Street, ADEN, YEMEN
+          </p>
+
+          <div style="margin-top: 30px">
+            <h3>Business Hours</h3>
+            <p>Monday-Friday: 9am - 8pm</p>
+            <p>Saturday: 10am - 6pm</p>
+            <p>Sunday: 12pm - 5pm</p>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" style="margin-top: 20px">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <a
+            href="#"
+            class="logo"
+            style="color: white; margin-bottom: 20px; display: inline-block"
+          >
+            <i class="fas fa-sun"></i>
+            TravelEase
+          </a>
+          <p>
+            Making dream vacations a reality. We specialize in creating
+            unforgettable travel experiences tailored to your preferences.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="#">Bali, Indonesia</a></li>
+            <li><a href="#">Paris, France</a></li>
+            <li><a href="#">Swiss Alps</a></li>
+            <li><a href="#">Santorini, Greece</a></li>
+            <li><a href="#">Tokyo, Japan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for travel tips and exclusive deals.
+          </p>
+          <form style="margin-top: 15px">
+            <div class="form-group">
+              <input
+                type="email"
+                placeholder="Your Email"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border-radius: 5px;
+                  border: none;
+                "
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              style="width: 100%; margin-top: 10px"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 TravelEase. All rights reserved. | Designed with
+          <i class="fas fa-heart" style="color: var(--accent)"></i> for
+          travelers
+        </p>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" id="closeCart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be added here dynamically -->
+        <div
+          class="empty-cart-message"
+          style="text-align: center; padding: 40px 0; color: var(--gray)"
+        >
+          <i
+            class="fas fa-shopping-cart"
+            style="font-size: 3rem; margin-bottom: 15px"
+          ></i>
+          <h4>Your cart is empty</h4>
+          <p>Add some amazing travel packages to your cart</p>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display: none">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+
+    <!-- Checkout Page (Popup Modal) -->
+    <div id="checkoutPage" class="checkout-modal" style="display: none">
+      <div class="checkout-container">
+        <div class="checkout-header">
+          <h2>Complete Your Booking</h2>
+          <p>
+            Please fill in your details to complete your travel package booking
+          </p>
+        </div>
+        <div class="checkout-steps">
+          <div class="step active" id="step1">
+            <div class="step-number">1</div>
+            <div class="step-label">Your Details</div>
+          </div>
+          <div class="step" id="step2">
+            <div class="step-number">2</div>
+            <div class="step-label">Payment</div>
+          </div>
+          <div class="step" id="step3">
+            <div class="step-number">3</div>
+            <div class="step-label">Confirmation</div>
+          </div>
+        </div>
+        <form id="checkoutForm">
+          <!-- Step 1: Personal Details -->
+          <div class="checkout-step" id="step1Content">
+            <h3 style="margin-bottom: 20px">Traveler Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required />
+              </div>
+            </div>
+
+            <h3 style="margin: 30px 0 20px">Billing Address</h3>
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" required />
+              </div>
+              <div class="form-group">
+                <label for="state">State/Province</label>
+                <input type="text" id="state" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="zip">ZIP/Postal Code</label>
+                <input type="text" id="zip" required />
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                  <option value="">Select Country</option>
+                  <option value="us">United States</option>
+                  <option value="ca">Canada</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="au">Australia</option>
+                  <option value="de">Germany</option>
+                  <option value="fr">France</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="navigation-buttons">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="cancelCheckout"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn" id="nextToPayment">
+                Continue to Payment
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Payment -->
+          <div class="checkout-step" id="step2Content" style="display: none">
+            <h3 style="margin-bottom: 20px">Payment Method</h3>
+            <div class="payment-methods">
+              <div class="payment-method active" data-method="credit">
+                <i class="far fa-credit-card"></i>
+                <h4>Credit Card</h4>
+                <p>Visa, Mastercard, Amex</p>
+              </div>
+              <div class="payment-method" data-method="paypal">
+                <i class="fab fa-paypal"></i>
+                <h4>PayPal</h4>
+                <p>Secure online payments</p>
+              </div>
+            </div>
+
+            <div id="creditCardForm" style="margin-top: 30px">
+              <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input
+                  type="text"
+                  id="cardNumber"
+                  placeholder="1234 5678 9012 3456"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiry">Expiry Date</label>
+                  <input type="text" id="expiry" placeholder="MM/YY" required />
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="123" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cardName">Name on Card</label>
+                <input type="text" id="cardName" required />
+              </div>
+            </div>
+
+            <div id="paypalForm" style="margin-top: 30px; display: none">
+              <div class="form-group">
+                <p>
+                  You will be redirected to PayPal to complete your payment
+                  securely.
+                </p>
+              </div>
+            </div>
+
+            <div class="navigation-buttons">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="backToDetails"
+              >
+                Back
+              </button>
+              <button type="button" class="btn" id="completeBooking">
+                Complete Booking
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Confirmation -->
+          <div class="checkout-step" id="step3Content" style="display: none">
+            <div class="confirmation-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Confirmed!</h2>
+            <p>
+              Thank you for your booking. Your travel documents will be sent to
+              your email shortly.
+            </p>
+            <p><strong>Booking Reference:</strong> TRAVEL-5A8B2C9D</p>
+            <div style="margin: 30px 0">
+              <a href="#" class="btn" id="backToHome">Back to Home</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <style>
+      .checkout-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+      }
+      .checkout-modal .checkout-container {
+        max-width: 540px;
+        width: 95vw;
+        margin: 0;
+        animation: popupIn 0.25s cubic-bezier(0.4, 2, 0.6, 1) both;
+      }
+      @keyframes popupIn {
+        0% {
+          transform: scale(0.92) translateY(40px);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(0.75) translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
